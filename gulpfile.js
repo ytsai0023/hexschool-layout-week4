@@ -9,7 +9,7 @@ var imagein = require('gulp-imagemin');
 var nunjucksRender = require('gulp-nunjucks-render');
 var data = require('gulp-data');
 var ghPages = require('gulp-gh-pages');
-
+var fs = require('fs');
 
 var paths = {
   css: {
@@ -32,7 +32,7 @@ var paths = {
     templates: 'app/assets/templates'
   },
   images: {
-    assets: 'app/assets/images/*{.png,.jpg,.svg}',
+    assets: 'app/assets/images/**/*{.png,.jpg,.svg}',
     dest: 'app/dist/images',
   },
   deploy:{
@@ -57,12 +57,20 @@ function scripts() {
     .pipe(gulp.dest(paths.js.dest))
     .pipe(browserSync.stream());
 }
+function config_data(){
+  return{
+    top_page:"",
+    image_directory:"images/",
+    css_directory:"styles/",
+  }
+}
+
 
 function index() {
   return gulp
     .src(paths.index.assets)
     .pipe(data(function (){
-      return require('./app/data/data.json');
+      return config_data();
     }))
     .pipe(
       nunjucksRender({
@@ -78,7 +86,7 @@ function pages() {
   return gulp
     .src(paths.pages.assets)
     .pipe(data(function (){
-      return require('./app/data/data.json');
+      return config_data();
     }))
     .pipe(
       nunjucksRender({
@@ -106,6 +114,8 @@ function watch() {
   });
   gulp.watch(paths.css.assets, styles);
   gulp.watch(paths.js.assets, scripts);
+  // gulp.watch(paths.index.assets).on('change', browserSync.reload);
+  // gulp.watch(paths.pages.assets,pages);
   gulp.watch(paths.index.assets).on('change', browserSync.reload);
   gulp.watch(paths.pages.assets).on('change', browserSync.reload);
   gulp.watch(paths.images.assets, images);

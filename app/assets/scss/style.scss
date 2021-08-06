@@ -1,7 +1,20 @@
+@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Sans:wght@700&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');
+@import "variables";
 @import "config";
 @import "layout";
-@import "variables";
 @import "font";
+@import "utility";
 
 
+
+main{
+    .jumbotron{
+        background: url("../images/jumbotron/laurenz-kleinheider-OsC8HauR0e0-unsplash.jpg");
+        height:840px;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    }
+}
 

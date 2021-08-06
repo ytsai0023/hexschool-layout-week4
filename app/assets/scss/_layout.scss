@@ -1,17 +1,57 @@
 
-// layout
+main{
+    width: 100%;
+    
+}
+
+
+.container{
+    max-width: 810px;
+    margin: auto 0;    
+}
+
+//flex
+
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.w-100{
+    width: 100%;
+}
 
 .flex{
     display: flex;
     flex-direction: row;
-    
 }
 
-.flex-middle{
+.flex-col{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.flex-around{
+    justify-content: space-around;
     align-items: center;
 }
+
+.flex-between{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-end{
+    justify-content:flex-end;
+}
+
+
+
 // 用再buttom多
 .flex-center{
     display: flex;
@@ -31,11 +71,11 @@
     justify-content: space-between;
 }
 
-.flex-col-start{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+// flex-col-start{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+// }
 
 //margin-bottom
 

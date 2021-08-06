@@ -1,0 +1,13 @@
+
+header{
+    background-color: $primary-color;
+    nav{
+        padding: 30px 80px;
+    }
+    .nav-links a{
+        display: block;
+        margin: 0 32px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
