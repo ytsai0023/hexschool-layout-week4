@@ -1,0 +1,117 @@
+
+
+
+h1{
+    color: $primary;
+    font-size:64px;
+    line-height: 96px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+}
+
+h2{
+    color: $primary;
+    font-size:48px;
+    line-height: 80px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+}
+
+h3{
+    color:$black;
+    font-size:32px;
+    line-height: 48px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: normal;
+}
+
+h4{
+    color:$primary;
+    font-size:24px;
+    line-height: 36px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: bold;
+
+}
+
+h5{
+    color:$black;
+    font-size:20px;
+    line-height: 24px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+}
+
+p{
+    color:$black;
+    font-size:16px;
+    line-height: 24px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: normal;
+}
+
+.date-text{
+    color:$comment;
+    font-size:14px;
+    line-height: 21px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: normal;
+}
+
+@include media-pad{
+
+    h1{
+        font-size:48px;
+        line-height: 72px;
+    }
+
+    h2{
+        font-size:32px;
+        line-height: 48px;
+    }
+
+    h3{
+        font-size:24px;
+        line-height: 36px;
+    }
+
+    h4{
+        font-size:20px;
+        line-height: 23px;
+    }
+
+
+    h5{
+        font-size:16px;
+        line-height: 24px;
+    }
+   
+}
+
+@include media-mobile{
+
+    h1{
+        font-size:32px;
+        line-height: 72px;
+    }
+
+    h2{
+        font-size:24px;
+        line-height: 36px;
+    }
+
+    h3{
+        font-size:16px;
+        line-height: 36px;
+    }
+
+    h4{
+        font-size:20px;
+        line-height: 24px;
+    }
+
+    h5{
+        font-size:16px;
+        line-height: 24px;
+    }
+}

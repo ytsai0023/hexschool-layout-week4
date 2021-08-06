@@ -21,7 +21,7 @@ var paths = {
     dest: 'app/dist/js',
   },
   index:{
-    assets:'app/assets/*.html',
+    assets:'app/assets/*.+(html|njk)',
     dest:'app/dist'
   },
   pages: {
