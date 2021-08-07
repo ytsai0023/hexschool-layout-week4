@@ -15,18 +15,18 @@ body{
 }
 
 @mixin  media-mobile{
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:calc(#{$break-point-pad} - 1px)) {
         @content;
     }
 }
 
 @mixin  media-pad{
-    @media screen and (min-width:768px){
+    @media screen and (min-width:$break-point-pad){
         @content;    }
 }
 
 @mixin  media-pc{
-    @media screen and (min-width:1024px){
+    @media screen and (min-width:$break-point-pc){
         @content;
     }
 }

@@ -29,15 +29,20 @@ header,main,footer{
     flex-direction: row;
 }
 
-.flex-col{
-    display: flex;
-    flex-direction: column;
+
+@include media-mobile{
+    .flex-s{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .flex-around{
     justify-content: space-around;
     align-items: center;
 }
+
+
 
 .flex-between{
     justify-content: space-between;
