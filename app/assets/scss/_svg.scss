@@ -1,0 +1,51 @@
+// .calendarIcon{
+//     //your url will be something like this:
+//     background-image: url("data:image/svg+xml,***<here place encoded svg>***");
+//     background-repeat: no-repeat;
+//   }
+
+.facebook-icon-svg{
+    background-image:url('../images/icons/icon-facebook.svg');
+}
+
+.instagrams-icon-svg{
+    background-image:url('../images/icons/icon-instagrams.svg');
+
+}
+
+.twitter-icon-svg{
+    background-image:url('../images/icons/icon-twitter.svg');
+
+}
+
+.telephone-icon-svg{
+    background-image:url('../images/icons/phone-call.svg');
+    height: 36px;
+    width: 36px;
+
+}
+
+.email-icon-svg{
+    background-image:url('../images/icons/email.svg');
+    height: 36px;
+    width: 36px;
+
+}
+
+// @include media-mobile{
+//     .facebook-icon-svg{
+//         height: 24px;
+//         width: 24px;
+//     }
+    
+//     .instagrams-icon-svg{
+//         height: 24px;
+//         width: 24px;
+//     }
+    
+//     .twitter-icon-svg{
+//         height: 24px;
+//         width: 24px;
+    
+//     }
+// }
