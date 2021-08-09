@@ -14,19 +14,23 @@ body{
     }
 }
 
+.show-border{
+    border: 1px solid #000;
+}
+
 @mixin  media-mobile{
-    @media screen and (max-width:calc(#{$break-point-pad} - 1px)) {
+    @media only screen and (max-width:calc(#{$break-point-pad} - 1px)){
         @content;
     }
 }
 
 @mixin  media-pad{
-    @media screen and (min-width:$break-point-pad){
+    @media only screen and (max-width:calc(#{$break-point-pc} - 1px )) and (min-width:$break-point-pad) {
         @content;    }
 }
 
 @mixin  media-pc{
-    @media screen and (min-width:$break-point-pc){
+    @media only screen and (min-width:$break-point-pc){
         @content;
     }
 }

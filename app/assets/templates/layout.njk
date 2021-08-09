@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav>
-            <ul class="flex flex-between flex-s">
+            <ul class="flex flex-between flex-mobile-col">
                 <li><img src="{{image_directory}}/icons/logo-sm.png" alt="首頁" href="{{top_page}}"></li>
                 <li class="flex">
                     <ul class="flex flex-around nav-links">
@@ -28,10 +28,10 @@
 
     <footer>
         <div class="container">
-            <ul class="mb-3">
+            <ul class="mb-3 mb-s-5 footer-nav-layout flex-mobile-row">
                 <!-- link -->
                 <li>
-                    <ul class="flex flex-between footer-nav mb-4 mb-md-2">
+                    <ul class="flex flex-between footer-nav mb-3 mb-m-6">
                         <li>
                             <ul class="flex flex-around footer-links">
                                 <li><a href="#">首頁</a></li>
@@ -44,43 +44,48 @@
                         <li>
                             <ul class="flex flex-around sns-links">   
                                 <li>
-                                    <a href="#" class="facebook-icon facebook-icon-svg">
+                                    <a href="https://www.facebook.com" class="facebook-icon"  target="_blank">
+                                        <span class="facebook-icon-svg"></span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="instagrams-icon instagrams-icon-svg">
+                                    <a href="https://www.instagram.com" class="instagrams-icon"  target="_blank">
+                                        <span class="instagrams-icon-svg"></span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="twitter-icon twitter-icon-svg">
+                                    <a href="https://www.twitter.com" class="twitter-icon"  target="_blank">
+                                        <span class="twitter-icon-svg"></span>
                                     </a>
                                 </li>
                             </ul>
                         </li> 
                     </ul>
                 </li>
-                <!-- 電話 -->
-                <li class="contact-way mb-3">
-                    <div class="flex flex-align telephone">
-                        <div class="telephone-icon-svg"></div>
-                        <p>
-                      0800-000-000</p>
-                    </div>
-                </li>
-                <li class="contact-way">
-                    <div class="flex flex-align mail">
-                        <div class="email-icon-svg"></div>
-                        <p> glasses@business.com</p>
-                           
-                    </div>
+                <li>
+                    <ul class="contact-way mb-3 mb-m-5 mb-s-4">
+                        <li class="flex flex-align telephone mb-3 mb-m-4 mb-s-3">
+                            <a href="tel:000-1234-5678"><span class="telephone-icon-svg"></span>
+                            </a>
+                            <p>
+                                0800-000-000
+                            </p>
+                        </li>
+                        <li class="flex flex-align mail">
+                            <a href="mailto:webmaster@example.com">
+                                <span class="email-icon-svg"></span>
+                            </a>
+                                <p> glasses@business.com</p>
+                        </li>
+                    </ul>
                 </li>
             </ul>
-            <hr class="white-hr mb-4 mb-md-3">
+            <hr class="white-hr mb-4 mb-s-3">
             <!-- 版權宣告 -->
-            <ul class="flex flex-between copy-right">
+            <ul class="flex flex-between copy-right flex-mobile-col">
                 <li>Copy&copy; 2020 Glasses.All right reserved.</li>
                 <li>
-                    <ul class="flex flex-around policy-links">
+                    <ul class="flex flex-around policy-links flex-mobile-col">
                         <li><a href="">隱私權政策</a></li>
                         <li><a href="">服務條款</a></li>
                     </ul>
