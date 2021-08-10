@@ -17,6 +17,7 @@ h1{
 
 h2{
     @include h2;
+    text-align: center;
 }
 
 @mixin h3{
@@ -93,6 +94,15 @@ p{
     font-weight: bold;
     font-style: italic;
     color: $primary-color;
+}
+
+.design-glasses-text{
+   font-size: 72px;
+   font-family: Roboto,sans-serif;
+   line-height: 108px;
+   font-weight: bold;
+   font-style:normal;
+   color: $primary-color;
 }
 
 

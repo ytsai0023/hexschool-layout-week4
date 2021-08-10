@@ -101,24 +101,26 @@ header,main,footer{
 .grid-1col{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    
+    justify-items:center;
 }
 
 .grid-2col{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    justify-items:center;
 }
 
 .grid-4col{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    
+    justify-items:center;
 }
 
 @include media-pad{
     .grid-m-2col{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        justify-items:center;
     }
 }
 
@@ -126,6 +128,7 @@ header,main,footer{
     .grid-s-1col{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+        justify-items:center;
     }
 }
 

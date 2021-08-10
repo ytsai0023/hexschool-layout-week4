@@ -96,3 +96,52 @@
     }
     
 }
+
+.design-glasses{
+    background-image:url("../images/models/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.jpg");
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0 80px 0;
+
+    h2{
+        color:$white-color;
+        width: 100%;
+        text-align: center;
+    }
+
+    li:nth-child(1){
+       background-image: url("../images/models/oladimeji-odunsi-Wu3yqve2gnc-unsplash.jpg");
+       width: 540px;
+       height: 455px;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+    }
+
+    li:nth-child(2){
+        background-image: url("../images/models/thiago-carlos-machado-oNXGsD7Ibsk-unsplash.jpg");
+        width: 540px;
+        height: 455px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+     }
+
+}
+
+@include media-mobile{
+
+    .design-glasses{
+        padding: 32px 0 40px 0;
+        li:nth-child(1){
+           width: 345px;
+           height: 290px;
+        }
+
+        li:nth-child(2){
+            width: 345px;
+            height: 290px;
+        }
+    }
+}
