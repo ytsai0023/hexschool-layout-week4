@@ -1,0 +1,98 @@
+
+.classic-glasses{
+    padding: 60px 0 80px 0;
+
+    .sparkle::before{
+        content:"";
+        background: url("../images/icons/icon-sun.svg");
+        background-size: 48px 48px;
+        background-repeat: no-repeat;
+        padding-left: 60px;
+    }
+    .sun::before{
+        content:"";
+        background-image: url("../images/icons/icon-thunder.svg");
+        background-size: 48px 48px;
+        background-repeat: no-repeat;
+        padding-left: 50px;
+    }
+
+    .lightning::before{
+        content:"";
+        background-image: url("../images/icons/icon-thunder.svg");
+        background-size: 48px 48px;
+        background-repeat: no-repeat;
+        padding-left: 50px;
+    }
+    
+    .models .people:nth-child(1) div:nth-child(2),
+    .models .people:nth-child(3) div:nth-child(2)
+    {
+        margin-left:30px;
+    }
+    .models .people:nth-child(2) div:nth-child(2){
+        margin-right: 30px;
+    }
+}
+
+@include media-mobile{
+    .classic-glasses{
+        padding: 32px 0 40px 0;
+        .models{ 
+            h2{
+                width: $break-point-mobile;
+            }
+            .people{ 
+                position: relative;
+                img{
+                    width: 345px;
+                    height: auto;
+                }
+                div:nth-child(1){
+                    position: relative;
+                } 
+                div:nth-child(2){
+                    position: absolute;
+                    height: 100%;
+                    top:calc((134px - 72px/2)/2);
+                } 
+            }
+        }
+        
+     
+        .sparkle::before{            
+            content:"";
+            background-image: url("../images/icons/icon-sun.svg");
+            background-size: 30px 30px;
+            background-repeat: no-repeat;
+            padding-left: 30px;
+        }
+        .sun::before{
+            content:"";
+            background-image: url("../images/icons/icon-thunder.svg");
+            background-size: 30px 30px;
+            background-repeat: no-repeat;
+            padding-left: 30px;
+        }
+    
+        .lightning::before{
+            content:"";
+            background-image: url("../images/icons/icon-thunder.svg");
+            background-size: 30px 30px;
+            background-repeat: no-repeat;
+            padding-left: 30px;
+        }
+        
+        .models .people:nth-child(1) div:nth-child(2),
+        .models .people:nth-child(3) div:nth-child(2)
+        {
+            margin-left:0px;
+        }
+        .models .people:nth-child(2) div:nth-child(2){
+            margin-right: 0px;
+        }
+
+      
+    }
+    
+}

@@ -6,16 +6,6 @@
 @import "layout";
 @import "font";
 @import "utility";
-
-
-
-main{
-    .jumbotron{
-        background: url("../images/jumbotron/laurenz-kleinheider-OsC8HauR0e0-unsplash.jpg");
-        height:840px;
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-    }
-}
+@import "jumbotron";
+@import "glasses";
 

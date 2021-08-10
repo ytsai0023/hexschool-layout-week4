@@ -1,36 +1,46 @@
 
 
 h1{
-    color: $primary-color;
+    color: $second-color;
     font-size:64px;
     line-height: 96px;
     font-family: "Noto Sans TC", sans-serif;
     font-weight: bold;
 }
-
-h2{
-    color: $primary-color;
+@mixin h2{
+    color: $second-color;
     font-size:48px;
     line-height: 80px;
     font-family: "Noto Sans TC", sans-serif;
     font-weight: bold;
 }
 
-h3{
-    color:$primary-color;
+h2{
+    @include h2;
+}
+
+@mixin h3{
+    color:$second-color;;
     font-size:32px;
     line-height: 48px;
     font-family: "Noto Sans TC", sans-serif;
     font-weight: normal;
 }
 
-h4{
-    color:$primary-color;
+h3{
+    @include h3;
+}
+
+@mixin h4{
+    color:$second-color;;
     font-size:24px;
     line-height: 36px;
     font-family: "Noto Sans TC", sans-serif;
     font-weight: bold;
+}
 
+h4{
+    @include h4;
 }
 
 h5{
@@ -53,6 +63,13 @@ p{
     @include p;
 }
 
+.sub-slogan{
+    @include h3;
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: lighter;
+}
+
 .date-text{
     color:$comment-color;
     font-size:14px;
@@ -67,6 +84,15 @@ p{
     line-height: 30px;
     font-family: "Noto Sans TC", sans-serif;
     font-weight: 200;
+}
+
+.glasses-models-text{
+    @include h2;
+    line-height: 72px;
+    font-family: Roboto,sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: $primary-color;
 }
 
 
@@ -126,4 +152,14 @@ p{
         font-size:16px;
         line-height: 24px;
     }
+
+    .glasses-models-text{
+        font-size: 28px;
+        line-height: 72px;
+        font-family: Roboto,sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        color: $primary-color;
+    }
+    
 }
