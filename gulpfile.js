@@ -26,7 +26,7 @@ var paths = {
   },
   pages: {
     assets: 'app/assets/pages/*.+(html|njk)',
-    dest: 'app/dist/pages'
+    dest: 'app/dist'
   },
   layout:{
     templates: 'app/assets/templates'
@@ -62,6 +62,7 @@ function config_data(){
     top_page:"",
     image_directory:"images/",
     css_directory:"styles/",
+    pages:""
   }
 }
 
