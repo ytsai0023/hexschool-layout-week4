@@ -117,6 +117,13 @@ header,main,footer{
     justify-items:center;
 }
 
+.grid-3col{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items:center;
+}
+
+
 .grid-4col{
     display: grid;
     grid-template-columns: repeat(4,1fr);
