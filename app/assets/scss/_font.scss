@@ -13,11 +13,11 @@ h1{
     line-height: 80px;
     font-family: "Noto Sans TC", sans-serif;
     font-weight: bold;
+    text-align:center;
 }
 
 h2{
     @include h2;
-    text-align: center;
 }
 
 @mixin h3{
@@ -26,6 +26,7 @@ h2{
     line-height: 48px;
     font-family: "Noto Sans TC", sans-serif;
     font-weight: normal;
+    text-align: center
 }
 
 h3{
@@ -105,6 +106,43 @@ p{
    color: $primary-color;
 }
 
+.products-name-text-en{
+    font-size: 42px;
+    line-height: 63px;
+    font-family: Roboto,sans-serif;
+    font-weight: normal;
+    color:$black-color;
+    text-align: center;
+}
+
+.products-name-text-zh{
+    @include h3;
+    line-height: 48px;
+    color:$black-color;
+    font-weight:normal;
+}
+
+@include media-pad{
+    .products-name-text-en{
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .products-name-text-zh{
+        font-size: 24px;
+        line-height: 36px;
+    }
+};
+
+@include media-mobile{
+    .products-name-text-en{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .products-name-text-zh{
+        font-size: 16px;
+        line-height: 24px;
+    }
+};
 
 @include media-pad{
 

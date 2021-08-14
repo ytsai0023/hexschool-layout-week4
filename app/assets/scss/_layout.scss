@@ -9,6 +9,13 @@ header,main,footer{
 }
 
 @include media-mobile{
+    .container-pad{
+        max-width:$break-point-pad;
+        margin: 0 auto;
+    }
+}
+
+@include media-mobile{
     .container-mobile{
         max-width:$break-point-mobile;
         margin: 0 auto;
