@@ -150,14 +150,13 @@ header,main,footer{
     text-align: center;
 }
 
-// 用再buttom多
-.flex-text-center{
+.{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 @include media-mobile{
-    .flex-text-center-mobile{
+    .-mobile{
         display: flex;
         flex-direction:column;
         justify-content: center;
