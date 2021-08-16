@@ -72,13 +72,24 @@ p{
     font-weight: lighter;
 }
 
-.date-text{
+@mixin small-text{
     color:$comment-color;
     font-size:14px;
     line-height: 21px;
     font-family: "Noto Sans TC", sans-serif;
     font-weight: normal;
 }
+
+
+.small-text{
+    @include small-text;
+}
+
+.date-text{
+    @include small-text;
+}
+
+
 
 .link-text{
     color: $white-color;

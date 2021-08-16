@@ -29,6 +29,13 @@ body{
         @content;    }
 }
 
+
+// @mixin  media-pad{
+//     @media only screen and (min-width:$break-point-pad) {
+//         @content;    }
+// }
+
+
 @mixin  media-pc{
     @media only screen and (min-width:$break-point-pc){
         @content;

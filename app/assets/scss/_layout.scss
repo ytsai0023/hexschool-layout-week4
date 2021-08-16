@@ -8,7 +8,7 @@ header,main,footer{
     margin: 0 auto;
 }
 
-@include media-mobile{
+@include media-pad{
     .container-pad{
         max-width:$break-point-pad;
         margin: 0 auto;
