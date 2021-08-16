@@ -45,12 +45,16 @@ h4{
     @include h4;
 }
 
-h5{
+@mixin h5{
     color:$black-color;
     font-size:20px;
     line-height: 30px;
     font-family: "Noto Sans", sans-serif;
     font-weight: normal;
+}
+
+h5{
+    @include h5;
 }
 
 @mixin p{
