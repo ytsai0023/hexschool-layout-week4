@@ -1,0 +1,21 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<div class="branch">
+    <div class="container">
+        <form action="" method="POST">
+            <h2 class="title mb-8">門市據點</h2>
+            <div class="dropdown-location flex flex-align mb-5">
+               <label for="branch_list">選擇分店</label>
+               <select name="branch_list" id="location_list">
+                   <option value="taipei">台北中山旗艦店</option>
+                   <option value="taichung">台中中港大酒店</option>
+                   <option value="kaoshung">高雄小港海產店</option>
+               </select>
+            </div>
+            {% include  "partials/store-map.njk"%} 
+            <!-- {% include  "partials/store-cards.njk"%} -->
+        </form>
+    </div>
+</div>
+{% endblock %}
