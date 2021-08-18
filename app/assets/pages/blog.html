@@ -1,61 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-    <nav>
-            <ul class="flex flex-between flex-mobile-col">
-                <li><a href="index.html"><img src="images//icons/logo-sm.png" alt="首頁" href=""></a></li>
-                <li class="flex">
-                    <ul class="flex flex-around nav-links">
-                        <li><a class="link-text" href="products.html">系列鏡框</a></li>
-                        <li><a class="link-text" href="location.html">門市據點</a></li>
-                        <li><a class="link-text" href="blog.html">部落格</a></li>
-                        <li><a class="link-text" href="problem.html">常見問題</a></li>
-                    </ul>
-                </li>
-            </ul>
-    </nav>
-</header>
-  
-    
-<div class="blog-nav">
-    <ul class="flex flex-between show-border container container-pad container-mobile">
-       <li>
-           <ul class="nav-link flex">
-                <li class="link-item"><a href="#">最新消息</a></li>
-                <li class="link-item"><a href="#">特別企劃</a></li>
-                <li class="link-item"><a href="#">新品上市</a></li>
-                <li class="link-item"><a href="#">鏡框小知識</a></li>
-           </ul>
-       </li>
-       <li>
-           <form action="" method="POST">
-                <ul class="search">
-                    <li class="flex flex-align">
-                        <input type="text" class="search-input">
-                        <button class="search-button"></button>
-                    </li>
-                </ul>
-            </form>
-       </li>
-       
-    </ul>
+{% extends "layout.njk" %}
 
-</div>
-
+{% block content %}
+{% include  "partials/blog-nav.njk"%}
 <div class="blog">
     <div class="container container-pad container-mobile ">
         <h2 class="common-big-title mb-8 mb-m-10 mb-s-7 ">部落格</h2>
         <div class="article-list">
             <div class="article-card flex flex-between flex-mobile-col mb-7 mb-m-6 mb-s-5">
-                <img src="images/blog/blog-1.png" alt="blog image-1" class="mb-s-2">
+                <img src="{{image_directory}}blog/blog-1.png" alt="blog image-1" class="mb-s-2">
                 <div class="content flex-col text-left">
                     <ul class="mb-3 mb-m-5 mb-s-0">
                         <li class="title"><h3>情人特別企劃</h3></li>
@@ -71,7 +23,7 @@
                 </div>
             </div>
             <div class="article-card flex flex-between flex-mobile-col mb-7 mb-m-6 mb-s-5">
-                <img src="images/blog/blog-2.png" alt="blog image-2" class="mb-s-2">
+                <img src="{{image_directory}}blog/blog-2.png" alt="blog image-2" class="mb-s-2">
                 <div class="content flex-col text-left">
                     <ul class="mb-3 mb-m-5 mb-s-0">
                         <li class="title"><h3>街頭潮人訪問</h3></li>
@@ -87,7 +39,7 @@
                 </div>
             </div>
             <div class="article-card flex flex-between flex-mobile-col mb-7 mb-m-6 mb-s-5" class="mb-s-2">
-                <img src="images/blog/blog-3.png" alt="blog image-3">
+                <img src="{{image_directory}}blog/blog-3.png" alt="blog image-3">
                 <div class="content flex-col text-left">
                     <ul class="mb-3 mb-m-5 mb-s-0">
                         <li class="title"><h3>春季新品上市</h3></li>
@@ -103,7 +55,7 @@
                 </div>
             </div>
             <div class="article-card flex flex-between flex-mobile-col mb-7 mb-m-6 mb-s-5" class="mb-s-2">
-                <img src="images/blog/blog-4.png" alt="blog image-4">
+                <img src="{{image_directory}}blog/blog-4.png" alt="blog image-4">
                 <div class="content flex-col text-left">
                     <ul class="mb-3 mb-m-5 mb-s-0">
                         <li class="title"><h3>設計師獨享鏡框優惠</h3></li>
@@ -119,12 +71,12 @@
                 </div>
             </div>
             <div class="article-card flex flex-between flex-mobile-col mb-7 mb-m-6 mb-s-10">
-                <img src="images/blog/blog-5.png" alt="blog image-5"  class="mb-s-2">
+                <img src="{{image_directory}}blog/blog-5.png" alt="blog image-5"  class="mb-s-2">
                 <div class="content flex-col text-left">
                     <ul class="mb-3 mb-m-5 mb-s-0">
                         <li class="title"><h3>抵抗夏日大作戰</h3></li>
                         <li class="sub-title flex flex-between">
-                            <h5><a href="#">Summer Special</a></h5>
+                            <h5>Summer Special</h5>
                             <p >2019/08/07</p>
                         </li>
                     </ul>
@@ -137,15 +89,7 @@
 
         </div>
     </div>
-     <ul class="pagination flex flex-center">
-            <li><a href="#">上一頁　</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#" active>下一頁　</a></li>
- </ul>
+    {% include  "partials/pagination.njk"%}
 </div>
 <script>
     function substringText(){
@@ -161,73 +105,4 @@
     window.addEventListener('load',substringText);
     
 </script>
-
-     <footer>
-        <div class="container">
-            <ul class="mb-3 mb-s-5 footer-nav-layout flex-mobile-row">
-                <!-- link -->
-                <li>
-                    <ul class="flex flex-between footer-nav mb-3 mb-m-6">
-                        <li>
-                            <ul class="flex flex-around footer-links">
-                                <li><a href="#">首頁</a></li>
-                                <li><a href="#">系列鏡框</a></li>
-                                <li><a href="#">門市據點</a></li>
-                                <li><a href="#">部落格</a></li>
-                                <li><a href="#">常見問題</a></li>
-                            </ul>        
-                        </li>
-                        <li>
-                            <ul class="flex flex-around sns-links">   
-                                <li>
-                                    <a href="https://www.facebook.com" class="facebook-icon"  target="_blank">
-                                        <span class="facebook-icon-svg"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com" class="instagrams-icon"  target="_blank">
-                                        <span class="instagrams-icon-svg"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.twitter.com" class="twitter-icon"  target="_blank">
-                                        <span class="twitter-icon-svg"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li> 
-                    </ul>
-                </li>
-                <li>
-                    <ul class="contact-way mb-3 mb-m-5 mb-s-4">
-                        <li class="flex flex-align telephone mb-3 mb-m-4 mb-s-3">
-                            <a href="tel:000-1234-5678"><span class="telephone-icon-svg"></span>
-                            </a>
-                            <p>
-                                0800-000-000
-                            </p>
-                        </li>
-                        <li class="flex flex-align mail">
-                            <a href="mailto:webmaster@example.com">
-                                <span class="email-icon-svg"></span>
-                            </a>
-                                <p> glasses@business.com</p>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <hr class="white-hr mb-4 mb-s-3">
-            <!-- 版權宣告 -->
-            <ul class="flex flex-between copy-right flex-mobile-col">
-                <li>Copy&copy; 2020 Glasses.All right reserved.</li>
-                <li>
-                    <ul class="flex flex-around policy-links flex-mobile-col">
-                        <li><a href="">隱私權政策</a></li>
-                        <li><a href="">服務條款</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </footer>
-</body>
-</html>
+{% endblock %}
