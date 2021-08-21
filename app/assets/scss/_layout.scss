@@ -90,6 +90,14 @@ header,main,footer{
     align-items: center;
 }
 
+@include media-mobile{
+    .flex-mobile-start{
+        justify-content:flex-start;
+        align-items: start;
+    }
+   
+}
+
 .flex-end{
     justify-content:flex-end;
     align-items: center;
