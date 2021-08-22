@@ -65,14 +65,7 @@ function scripts() {
     .pipe(gulp.dest(paths.js.dest))
     .pipe(browserSync.stream());
 }
-// function config(){
-//   return{
-//     top_page:"",
-//     image_directory:"images/",
-//     css_directory:"styles/",
-//     pages:""
-//   }
-// }
+
 function index() {
   return gulp
     .src(paths.index.assets)
@@ -132,7 +125,6 @@ function deploy(){
     .src(paths.deploy.public)
     .pipe(ghPages());
 }
-// exports.styles = styles;
 exports.watch = watch;
 exports.deploy = deploy;
 
