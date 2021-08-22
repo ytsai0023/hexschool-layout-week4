@@ -11,7 +11,7 @@ var data = require('gulp-data');
 var ghPages = require('gulp-gh-pages');
 var fs = require('fs');
 
-var paths = {
+const paths = {
   css: {
     assets: 'app/assets/scss/*.scss',
     dest: 'app/dist/styles',
@@ -40,6 +40,14 @@ var paths = {
   }
 };
 
+const config ={
+  top_page:"",
+  image_directory:"images/",
+  css_directory:"styles/",
+  pages:""
+};
+
+
 function styles() {
   return gulp
     .src(paths.css.assets)
@@ -57,21 +65,19 @@ function scripts() {
     .pipe(gulp.dest(paths.js.dest))
     .pipe(browserSync.stream());
 }
-function config_data(){
-  return{
-    top_page:"",
-    image_directory:"images/",
-    css_directory:"styles/",
-    pages:""
-  }
-}
-
-
+// function config(){
+//   return{
+//     top_page:"",
+//     image_directory:"images/",
+//     css_directory:"styles/",
+//     pages:""
+//   }
+// }
 function index() {
   return gulp
     .src(paths.index.assets)
     .pipe(data(function (){
-      return config_data();
+      return config;
     }))
     .pipe(
       nunjucksRender({
@@ -87,7 +93,7 @@ function pages() {
   return gulp
     .src(paths.pages.assets)
     .pipe(data(function (){
-      return config_data();
+      return config;
     }))
     .pipe(
       nunjucksRender({
