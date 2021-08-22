@@ -9,7 +9,7 @@
             <div class="article-card flex flex-between flex-mobile-col mb-7 mb-m-6 mb-s-5">
                 <img src="{{image_directory}}blog/blog-1.png" alt="blog image-1" class="mb-s-2">
                 <div class="content flex-col text-left">
-                    <ul class="mb-3 mb-m-5 mb-s-0">
+                    <ul class="mb-3 mb-m-4 mb-s-0">
                         <li class="title"><h3>情人特別企劃</h3></li>
                         <li class="sub-title flex flex-between">
                             <h5>2020 Valentine’s Special</h5>
@@ -25,7 +25,7 @@
             <div class="article-card flex flex-between flex-mobile-col mb-7 mb-m-6 mb-s-5">
                 <img src="{{image_directory}}blog/blog-2.png" alt="blog image-2" class="mb-s-2">
                 <div class="content flex-col text-left">
-                    <ul class="mb-3 mb-m-5 mb-s-0">
+                    <ul class="mb-3 mb-m-4 mb-s-0">
                         <li class="title"><h3>街頭潮人訪問</h3></li>
                         <li class="sub-title flex flex-between">
                             <h5>Street Interview</h5>
@@ -41,7 +41,7 @@
             <div class="article-card flex flex-between flex-mobile-col mb-7 mb-m-6 mb-s-5" class="mb-s-2">
                 <img src="{{image_directory}}blog/blog-3.png" alt="blog image-3">
                 <div class="content flex-col text-left">
-                    <ul class="mb-3 mb-m-5 mb-s-0">
+                    <ul class="mb-3 mb-m-4 mb-s-0">
                         <li class="title"><h3>春季新品上市</h3></li>
                         <li class="sub-title flex flex-between">
                             <h5>New Selection</h5>
@@ -57,7 +57,7 @@
             <div class="article-card flex flex-between flex-mobile-col mb-7 mb-m-6 mb-s-5" class="mb-s-2">
                 <img src="{{image_directory}}blog/blog-4.png" alt="blog image-4">
                 <div class="content flex-col text-left">
-                    <ul class="mb-3 mb-m-5 mb-s-0">
+                    <ul class="mb-3 mb-m-4 mb-s-0">
                         <li class="title"><h3>設計師獨享鏡框優惠</h3></li>
                         <li class="sub-title flex flex-between">
                             <h5>Sales for Designer</h5>
@@ -73,7 +73,7 @@
             <div class="article-card flex flex-between flex-mobile-col mb-7 mb-m-6 mb-s-10">
                 <img src="{{image_directory}}blog/blog-5.png" alt="blog image-5"  class="mb-s-2">
                 <div class="content flex-col text-left">
-                    <ul class="mb-3 mb-m-5 mb-s-0">
+                    <ul class="mb-3 mb-m-4 mb-s-0">
                         <li class="title"><h3>抵抗夏日大作戰</h3></li>
                         <li class="sub-title flex flex-between">
                             <h5>Summer Special</h5>
@@ -96,7 +96,7 @@
         if(window.innerWidth<1024){
             let articles = document.querySelectorAll(".article p");
             articles.forEach(p => {
-                let new_text = p.innerText.substring(0,138)+`⋯⋯`;
+                let new_text = p.innerText.substring(0,145)+`⋯⋯`;
                 p.innerHTML = `<p>${new_text}<a href="article.html" class="article-link-pad">more</a></p>`;
             });
         }

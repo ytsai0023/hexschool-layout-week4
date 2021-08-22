@@ -22,7 +22,7 @@ header,main,footer{
     }
 }
 
-//
+//display blok
 .d-block{
     display: block;
 }
@@ -108,11 +108,17 @@ header,main,footer{
     align-items: center;
 }
 
+.flex-space-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .verical-align{
     vertical-align: middle;
 }
 
-
+//grid
 .grid-1col{
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -154,6 +160,7 @@ header,main,footer{
     }
 }
 
+//text-align
 .text-center{
     text-align: center;
 }
@@ -168,10 +175,12 @@ header,main,footer{
 }
 
 
+//文字置中常用屬性
 .flex-text-center{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 @include media-mobile{
@@ -183,20 +192,8 @@ header,main,footer{
     }
 }
 
-
-.d-inline-b{
-    display: inline-block;
-}
-
 .vertical-center{
     align-items: center;
-}
-
-
-.flex-space-between{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 //margin-bottom
