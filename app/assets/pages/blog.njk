@@ -96,8 +96,10 @@
         if(window.innerWidth<1024){
             let articles = document.querySelectorAll(".article p");
             articles.forEach(p => {
-                let new_text = p.innerText.substring(0,145)+`⋯⋯`;
-                p.innerHTML = `<p>${new_text}<a href="article.html" class="article-link-pad">more</a></p>`;
+                if(!p.innerText.includes("more")){
+                    let new_text = p.innerText.substring(0,115)+`......`;
+                    p.innerHTML = `<p>${new_text}<a href="article.html" class="article-link-pad">more</a></p>`;
+                }
             });
         }
     }
