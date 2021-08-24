@@ -1,6 +1,6 @@
 # Layout_lecture_2021
 
-切版直播班2021夏季班
+切版直播班2021夏季班.  第三週、第四週
 
 ### 網址
 https://ytsai0023.github.io/hexschool-layout-week4/
